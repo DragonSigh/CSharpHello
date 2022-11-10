@@ -1,0 +1,15 @@
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\bin\Debug\net6.0\Project002_HelloUser.exe
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\bin\Debug\net6.0\Project002_HelloUser.deps.json
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\bin\Debug\net6.0\Project002_HelloUser.runtimeconfig.json
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\bin\Debug\net6.0\Project002_HelloUser.dll
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\bin\Debug\net6.0\Project002_HelloUser.pdb
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.csproj.AssemblyReference.cache
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.AssemblyInfoInputs.cache
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.AssemblyInfo.cs
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.csproj.CoreCompileInputs.cache
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.dll
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\refint\Project002_HelloUser.dll
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.pdb
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\Project002_HelloUser.genruntimeconfig.cache
+C:\Users\1\OneDrive\Документы\Projects\Project002_HelloUser\obj\Debug\net6.0\ref\Project002_HelloUser.dll
