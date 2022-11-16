@@ -11,4 +11,4 @@ while (true)
 
 int result = varA % 100 / 10;
 
-Console.WriteLine($"{varA} -> {result}");св
+Console.WriteLine($"{varA} -> {result}");
