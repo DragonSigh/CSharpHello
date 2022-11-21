@@ -8,6 +8,8 @@ int X1 = 0, X2 = 0, Y1 = 0, Y2 = 0, Z1 = 0, Z2 = 0;
 InitCoordinatesByUser(ref X1, ref X2, ref Y1, ref Y2, ref Z1, ref Z2); // Вызов метода с передачей параметров по ссылке (ref)
 PrintResult(X1, X2, Y1, Y2, Z1, Z2);          // Вызов метода с передачей параметров по значению
 
+
+// Метод для вовода координат пользователем
 static void InitCoordinatesByUser(ref int X1, ref int X2, ref int Y1, ref int Y2, ref int Z1, ref int Z2)
 {
     try
@@ -33,6 +35,7 @@ static void InitCoordinatesByUser(ref int X1, ref int X2, ref int Y1, ref int Y2
     }
 }
 
+// Метод вывода результатов
 static void PrintResult(int X1, int X2, int Y1, int Y2, int Z1, int Z2)
 {
     double result = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2) + Math.Pow(Z2 - Z1, 2));
