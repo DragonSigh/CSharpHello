@@ -1,6 +1,18 @@
-﻿int number1 = UserInputNumber();
-PrintPalindromeResult();
+﻿// Задача 19
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
 
+// Ввод
+int number1 = UserInputNumber();
+// Вывод
+if (CheckPalindromeResult(ref number1))
+    Console.WriteLine($"{number1} -> да");
+else
+    Console.WriteLine($"{number1} -> нет");
+
+// --------------------------------------------------------
 // Метод для ввода пятизначного числа от пользователя
 static int UserInputNumber()
 {
@@ -17,9 +29,23 @@ static int UserInputNumber()
     return number;
 }
 
-// Метод для вывода результатов проверки палиндрома
-
-static void PrintPalindromeResult()
+// --------------------------------------------------------
+// Метод для проверки палиндрома
+static bool CheckPalindromeResult(ref int number1)
 {
-    
+    int n = number1;
+    int reverse_number = 0;
+    int digit = 0;
+
+    // "Переворачиваем" число разряд за разрядом
+    while (n != 0)
+    {
+        digit = n % 10;
+        reverse_number = (reverse_number * 10) + digit;
+        n = n / 10;
+    }
+        
+    return (number1 == reverse_number);
 }
+
+// --------------------------------------------------------
