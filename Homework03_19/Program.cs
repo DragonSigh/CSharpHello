@@ -4,6 +4,7 @@
 // 12821 -> да
 // 23432 -> да
 
+Console.Clear();
 // Ввод
 int number1 = UserInputNumber();
 // Вывод
