@@ -25,7 +25,7 @@ static int UserInputNumber()
             break;
         Console.WriteLine("Ошибка ввода!");
     }
-    return number;св 
+    return number;
 }
 
 // --------------------------------------------------------
