@@ -14,7 +14,7 @@ static int GetSumOfDigitsInNumber(int n)
     int sum = 0;
     while (n != 0)
     {
-        sum = sum  + (n % 10);
+        sum = sum + (n % 10);
         n = n / 10;
     }
     return sum;
@@ -24,7 +24,7 @@ static int GetSumOfDigitsInNumber(int n)
 // Метод для ввода целого числа от пользователя
 static int GetNumberFromUser(string message, string errorMessage)
 {
-    while(true)
+    while (true)
     {
         Console.Write(message);
         if (int.TryParse(Console.ReadLine(), out int userNumber))
