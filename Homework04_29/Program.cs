@@ -3,13 +3,13 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 var arraySize = GetNumberFromUser("Введите размер массива: ", "Ошибка ввода!");
-int[] array = new int[arraySize];
+int[] myArray = new int[arraySize];
 
-FillArray(array); // Заполняем массив
+FillArray(myArray); // Заполняем массив
 Console.Clear();
-PrintArray(array, false); // Выводим числа без скобочек
+PrintArray(myArray, false); // Выводим числа без скобочек
 Console.Write(" -> ");
-PrintArray(array, true); // Выводим числа со скобочками
+PrintArray(myArray, true); // Выводим числа со скобочками
 
 // ---------------------------------------------------------------
 // Метод для заполнения массива целыми числами
