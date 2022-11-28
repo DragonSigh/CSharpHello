@@ -3,7 +3,7 @@
 // [3 7 22 2 78] -> 76
 
 int arraySize = new Random().Next(5, 10);       // Случайный размер массива
-double[] myArray = GetArray(arraySize, 1, 100);  // Создаём массив с элементами от 1 до 100000
+double[] myArray = GetArray(arraySize, 1, 100);  // Создаём массив с элементами от 1 до 100
 
 Console.WriteLine($"[{String.Join(", ", myArray)}] -> {minMaxDifference(myArray)}");
 
