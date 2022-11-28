@@ -16,6 +16,7 @@ double[] GetArray(int size, int minValue, int maxValue)
     for (int i = 0; i < size; i++)
     {
         res[i] = new Random().Next(minValue, maxValue + 1);
+        // res[i] /= 10; // Сделать сами элементы массива вещественными числами
     }
     return res;
 }
