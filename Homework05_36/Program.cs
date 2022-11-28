@@ -1,11 +1,12 @@
-﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами.
-// Напишите программу, которая покажет количество чётных чисел в массиве.
-// [345, 897, 568, 234] -> 2
+﻿// Задача 36: Задайте одномерный массив, заполненный случайными числами.
+// Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
 
-int arraySize = new Random().Next(4, 10);       // Случайный размер массива
-int[] myArray = GetArray(arraySize, 100, 999);  // Создаём массив с элементами от 100 до 999
+int arraySize = new Random().Next(3, 6);       // Случайный размер массива
+int[] myArray = GetArray(arraySize, -100, 100);  // Создаём массив с элементами от -100 до 100
 
-Console.WriteLine($"[{String.Join(", ", myArray)}] -> {CountPositiveNumbers(myArray)}");
+Console.WriteLine($"[{String.Join(", ", myArray)}] -> {SumOddPositions(myArray)}");
 
 //////////////////////////////////////////////////////////////////////////////////
 // Возвращает массив из size элементов,
@@ -21,13 +22,14 @@ int[] GetArray(int size, int minValue, int maxValue)
 }
 
 //////////////////////////////////////////////////////////////////////////////////
-// Считает количество положительных элементов в массиве
-int CountPositiveNumbers(int[] arr)
+// Возвращает сумму элементов на нечётных позициях в массиве
+int SumOddPositions(int[] arr)
 {
-    int counter = 0;
-    foreach (int element in arr)
+    int sum = 0;
+
+    for (int i = 1; i < arr.Length; i += 2)
     {
-        if (element % 2 == 0) counter += 1;
+        sum += arr[i];
     }
-    return counter;
+    return sum;
 }
