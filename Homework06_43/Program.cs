@@ -15,11 +15,16 @@ double k2 = GetNumberFromUser("Введите число k2: ", "Ошибка в
 // x * (k1 - k2) = b2 - b1
 // x = (b2 - b1) / (k1 - k2)
 
-double x = (b2 - b1) / (k1 - k2);
-double y = k1 * x + b1;
-
 Console.Clear();
-Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({Math.Round(x, 2)}; {Math.Round(y, 2)})");
+
+if (k1 == k2)
+    Console.WriteLine("Точки пересечения нет");
+else
+{
+    double x = (b2 - b1) / (k1 - k2);
+    double y = k1 * x + b1;
+    Console.WriteLine($"b1 = {b1}, k1 = {k1}, b2 = {b2}, k2 = {k2} -> ({Math.Round(x, 2)}; {Math.Round(y, 2)})");
+}
 
 // ---------------------------------------------------------------
 // Метод для ввода целого числа от пользователя
