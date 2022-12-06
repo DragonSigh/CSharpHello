@@ -17,14 +17,7 @@ int[,] array = GetArray(new Random().Next(3, 5),
 
 PrintArray(array);
 
-if (row < array.GetLength(0)
-    && column < array.GetLength(1)
-    && row > 0
-    && column > 0)
-    Console.WriteLine($"[{row},{column}] -> {array[row - 1, column - 1]}");
-else
-    Console.WriteLine($"[{row},{column}] -> такого числа в массиве нет");
-
+Console.WriteLine(ReturnElementByPosition(row, column, array));
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
@@ -49,4 +42,15 @@ void PrintArray(int[,] inArray)
         }
         Console.WriteLine();
     }
+}
+
+string ReturnElementByPosition(int x_pos, int y_pos, int[,] inArray)
+{
+if (x_pos < inArray.GetLength(0)
+    && y_pos < inArray.GetLength(1)
+    && x_pos > 0
+    && y_pos > 0)
+    return $"[{x_pos},{y_pos}] -> {inArray[x_pos - 1, y_pos - 1]}";
+else
+    return $"[{x_pos},{y_pos}] -> такого числа в массиве нет";
 }
