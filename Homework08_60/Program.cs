@@ -25,25 +25,20 @@ int[,,] Get3dArray(int m, int n, int o, int minValue, int maxValue)
     int[,,] result = new int[m, n, o];
 
     int newNumber = 0;
-    int newNumberCounter = 0;
 
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
             for (int k = 0; k < o; k++)
-            {
-               if (newNumberCounter == maxValue)
-
+            {     
                while (true)
                {
                 newNumber = new Random().Next(minValue, maxValue + 1);
                 if (uniqueNumbers[newNumber] != newNumber) break;
-                if (newNumberCounter == maxValue) newNumber = -1;
                }
 
                uniqueNumbers[newNumber] = newNumber; // Сохраняем число в массиве уже существующих
-               newNumberCounter++;
                 
                result[i, j, k] = newNumber;
             }
