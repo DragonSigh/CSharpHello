@@ -19,7 +19,7 @@ static int GetPositiveNumberFromUser(string message, string errorMessage)
     {
         Console.Write(message);
         if (int.TryParse(Console.ReadLine(), out int userNumber))
-            if (userNumber > 0)
+            if (userNumber >= 0)
                 return userNumber;
         Console.WriteLine(errorMessage);
     }
